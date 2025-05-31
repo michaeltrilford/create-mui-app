@@ -1,4 +1,4 @@
-# MUI Create App
+# Create Mui App
 
 A lightweight starter template for building accessible, fast-loading interfaces using native web components and MUI-inspired styling.
 
