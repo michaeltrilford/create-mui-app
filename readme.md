@@ -1,11 +1,11 @@
-# Create Mui App
+# Create Mui App (WIP)
 
-A lightweight starter template for building accessible, fast-loading interfaces using native web components and MUI-inspired styling.
+A lightweight starter template for building accessible, fast-loading interfaces using native web components and MUI-inspired experiences.
 
 This project is powered by [Vite](https://vitejs.dev/) and uses TypeScript to provide a fast,
 modern development experience for building and previewing web components.
 
-Note: The mui-components will be replaced with NPM.
+Note: The mui-components will be replaced with NPM soon.
 
 ## Setup
 
