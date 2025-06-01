@@ -2,15 +2,23 @@
 
 A lightweight starter template for building accessible, fast-loading interfaces using Mui Web Components to build web experiences.
 
-## Muibook - Documentation
+---
+
+## Muibook Documentation
 
 Muibook is the home of the Mui Design System (MichaelUI) — native Web Components with clean, composable patterns
 that help you write less code. Visit [muibook.com](https://muibook.com) for usage documentation and component examples.
+
+---
+
+## Vite
 
 This project is powered by [Vite](https://vitejs.dev/) and uses TypeScript to provide a fast,
 modern development experience for building and previewing web components.
 
 Note: The mui-components will be replaced with NPM soon.
+
+---
 
 ## Setup
 
@@ -59,6 +67,8 @@ Install [es6-string-html](https://marketplace.visualstudio.com/items?itemName=To
 - **Reset + Base Styles**
 - **Starter Components** (heading, body, link, container, stack)
 - **Mui Parts Selectors**
+
+---
 
 ## 📄 License
 
