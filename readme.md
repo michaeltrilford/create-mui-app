@@ -9,17 +9,25 @@ Note: The mui-components will be replaced with NPM soon.
 
 ## Setup
 
-Install dependencies::
+Navigate to the directory:
 
-`npm install`
+- `create-mui-app`
+
+Install dependencies:
+
+- `npm install`
 
 Optionally, install Node.js types for TypeScript:
 
-`npm install --save-dev @types/node`
+- `npm install --save-dev @types/node`
 
 ## Run
 
 `npm run dev`
+
+## VS Code Plug-in
+
+Install (es6-string-html)[https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html]
 
 ---
 
