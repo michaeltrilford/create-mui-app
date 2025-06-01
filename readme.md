@@ -1,6 +1,11 @@
 # Create Mui App (WIP)
 
-A lightweight starter template for building accessible, fast-loading interfaces using native web components and MUI-inspired experiences.
+A lightweight starter template for building accessible, fast-loading interfaces using Mui Web Components to build web experiences.
+
+## Muibook - Documentation
+
+Muibook is the home of the Mui Design System (MichaelUI) — native Web Components with clean, composable patterns
+that help you write less code. Visit (muibook.com)[https://muibook.com] for usage documentation and component examples.
 
 This project is powered by [Vite](https://vitejs.dev/) and uses TypeScript to provide a fast,
 modern development experience for building and previewing web components.
