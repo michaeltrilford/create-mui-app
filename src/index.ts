@@ -40,7 +40,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /*html*/ `
           href="https://muibook.com"
           target="_blank"
         >
-          View Docs
+          Mui Docs
         </mui-link>
         <mui-link
           class="github-link"
