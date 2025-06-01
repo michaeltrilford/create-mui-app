@@ -45,10 +45,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /*html*/ `
         <mui-link
           class="github-link"
           variant="secondary"
-          href="#"
+          href="https://github.com/michaeltrilford/create-mui-app"
           target="_blank"
         >
-          View Github
+          Get Started
         </mui-link>
       </mui-h-stack>
       <mui-h-stack space="var(--space-300)" alignY="center">
