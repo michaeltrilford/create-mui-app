@@ -5,7 +5,7 @@ A lightweight starter template for building accessible, fast-loading interfaces 
 ## Muibook - Documentation
 
 Muibook is the home of the Mui Design System (MichaelUI) — native Web Components with clean, composable patterns
-that help you write less code. Visit (muibook.com)[https://muibook.com] for usage documentation and component examples.
+that help you write less code. Visit [muibook.com](https://muibook.com) for usage documentation and component examples.
 
 This project is powered by [Vite](https://vitejs.dev/) and uses TypeScript to provide a fast,
 modern development experience for building and previewing web components.
@@ -32,7 +32,7 @@ Optionally, install Node.js types for TypeScript:
 
 ## VS Code Plug-in
 
-Install (es6-string-html)[https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html]
+Install [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html)
 
 ---
 
