@@ -1,3 +1,7 @@
+import "@muibook/components/mui-icons/sun";
+import "@muibook/components/mui-icons/moon";
+import "@muibook/components/mui-switch";
+
 class DarkModeToggle extends HTMLElement {
   constructor() {
     super();

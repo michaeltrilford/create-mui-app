@@ -73,7 +73,6 @@ import "@muibook/components";
 Import Individually
 
 ```javascript
-import "@muibook/components/mui-heading";
 import "@muibook/components/mui-body";
 ```
 
