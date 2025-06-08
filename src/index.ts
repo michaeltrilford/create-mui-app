@@ -4,18 +4,18 @@ import "./mui-styles/mui-reset.css";
 import "./mui-styles/mui-base.css";
 
 // Mui Components (JS Package)
-import "./mui-components/mui-icons/sun/index.js";
-import "./mui-components/mui-icons/moon/index.js";
-import "./mui-components/mui-switch/index.js";
-import "./mui-components/mui-container/index.js";
-import "./mui-components/mui-heading/index.js";
-import "./mui-components/mui-body/index.js";
-import "./mui-components/mui-link/index.js";
-import "./mui-components/mui-stack/hstack/index.js";
-import "./mui-components/mui-stack/vstack/index.js";
+import "@muibook/components/mui-icons/sun";
+import "@muibook/components/mui-icons/moon";
+import "@muibook/components/mui-switch";
+import "@muibook/components/mui-container";
+import "@muibook/components/mui-heading";
+import "@muibook/components/mui-body";
+import "@muibook/components/mui-link";
+import "@muibook/components/mui-stack/hstack";
+import "@muibook/components/mui-stack/vstack";
 
 // Mui Utils (Required)
-import "./mui-components/mui-utils/part-map/index.js";
+import "@muibook/components/mui-utils/part-map";
 
 // Author CSS
 import "./author/index.css";
