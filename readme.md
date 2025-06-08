@@ -38,6 +38,10 @@ Optionally, install Node.js types for TypeScript:
 
 `npm run dev`
 
+## Packages used
+
+[@muibook/components](https://www.npmjs.com/package/@muibook/components)
+
 ## VS Code Plug-in
 
 Install [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html)
