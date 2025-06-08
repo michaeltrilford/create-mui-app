@@ -1,4 +1,4 @@
-# Create Mui App (WIP)
+# Create Mui App
 
 A lightweight starter template for building accessible, fast-loading interfaces using Mui Web Components to build web experiences.
 
@@ -64,12 +64,29 @@ Install [es6-string-html](https://marketplace.visualstudio.com/items?itemName=To
 
 ---
 
+Import All
+
+```javascript
+import "@muibook/components";
+```
+
+Import Individually
+
+```javascript
+import "@muibook/components/mui-heading";
+import "@muibook/components/mui-body";
+```
+
+[Review structure](https://www.npmjs.com/package/@muibook/components?activeTab=code)
+
+---
+
 ## 📦 What's Included?
 
 - **Predefined Design Tokens** (spacing, typography, colors)
 - **Light/Dark Theming Support**
 - **Reset + Base Styles**
-- **Starter Components** (heading, body, link, container, stack)
+- **Mui Components** (heading, body, link, container, stack)
 - **Mui Parts Selectors**
 
 ---
