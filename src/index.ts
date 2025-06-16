@@ -1,17 +1,17 @@
-// Mui CSS
-import "./mui-styles/mui-tokens.css";
-import "./mui-styles/mui-reset.css";
-import "./mui-styles/mui-base.css";
+// Mui CSS (PACKAGE)
+import "@muibook/components/css/mui-base.css";
+import "@muibook/components/css/mui-reset.css";
 
-// Mui Components
+// Author CSS (LOCAL)
+import "./mui-styles/mui-tokens.css";
+import "./author/index.css";
+
+// Mui Components (PACKAGE)
 import "@muibook/components/mui-container";
 import "@muibook/components/mui-body";
 import "@muibook/components/mui-link";
 import "@muibook/components/mui-stack/hstack";
 import "@muibook/components/mui-stack/vstack";
-
-// Author CSS
-import "./author/index.css";
 
 // Assets
 import "./logo.js";
