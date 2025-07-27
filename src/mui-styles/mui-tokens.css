@@ -370,6 +370,13 @@ html[data-theme="light"] {
 
   /* Carousel */
   --carousel-background: var(--white);
+
+  /* Slat */
+  --slat-background: var(--white-opacity-60);
+  --slat-background-hover: var(--white-opacity-90);
+  --slat-card-background: var(--surface-elevated-100);
+  --slat-card-background-hover: var(--surface-elevated-200);
+  --slat-accessory-background: var(--black-opacity-10);
 }
 
 /* ==================================================================================================== */
@@ -540,6 +547,13 @@ html[data-theme="dark"] {
 
   /* Carousel */
   --carousel-background: var(--grey-700);
+
+  /* Slat */
+  --slat-background: var(--black-opacity-20);
+  --slat-background-hover: var(--black-opacity-50);
+  --slat-card-background: var(--surface-elevated-100);
+  --slat-card-background-hover: var(--surface-elevated-200);
+  --slat-accessory-background: var(--white-opacity-10);
 }
 
 /* ==================================================================================================== */
@@ -576,7 +590,9 @@ html[data-theme="dark"] {
   --action-attention-border-focus: var(--stroke-size-200) var(--stroke-solid) var(--action-attention-border-color-focus);
   --action-attention-border-disabled: var(--stroke-size-200) var(--stroke-solid)
     var(--action-attention-border-color-disabled);
-  --action-padding: var(--space-200) var(--space-500);
+  --action-padding: var(--space-200) calc(var(--space-300) + var(--space-100));
+  --action-before-slot-padding: var(--space-300);
+  --action-after-slot-padding: var(--space-300);
   --action-icon-only-padding: var(--space-000);
   --action-radius: var(--radius-100);
   --action-font-size: var(--text-font-size);
@@ -651,4 +667,6 @@ html[data-theme="dark"] {
   --carousel-radius: var(--radius-300);
   --carousel-tab-position: var(--space-400);
   --carousel-tab-offset: calc(4.4rem + var(--carousel-tab-position)); /* Tab Height */
+  /* Slat [Action] */
+  --slat-radius: var(--radius-200);
 }
