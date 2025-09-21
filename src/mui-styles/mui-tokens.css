@@ -272,7 +272,7 @@ html[data-theme="light"] {
   --action-secondary-border-color: var(--grey-800);
   --action-secondary-border-color-hover: var(--grey-800);
   --action-secondary-border-color-focus: var(--grey-800);
-  --action-secondary-border-color-disabled: var(--grey-800);
+  --action-secondary-border-color-disabled: var(--grey-400);
   --action-secondary-background: var(--white-opacity-0);
   --action-secondary-background-hover: var(--grey-100);
   --action-secondary-background-focus: var(--grey-100);
@@ -327,6 +327,7 @@ html[data-theme="light"] {
   --text-color-error: var(--red-600);
   --text-color-optional: var(--grey-600);
 
+  --backdrop-overlay: var(--black-opacity-70);
   /* ================================================================================================== */
   /* Components                                                                                         */
   /* ================================================================================================== */
@@ -354,6 +355,16 @@ html[data-theme="light"] {
   /* Input */
   --input-background: var(--white);
   --input-background-disabled: var(--grey-100);
+
+  /* Checkbox */
+  --checkbox-background: var(--white);
+  --checkbox-background-checked: var(--grey-900);
+  --checkbox-icon-color-checked: var(--grey-200);
+
+  --checkbox-background-disabled: var(--grey-100);
+  --checkbox-background-checked-disabled: var(--grey-800);
+  --checkbox-icon-color-checked-disabled: var(--grey-100);
+
   /* Addon */
   --addon-background: var(--grey-100);
   /* Tabs */
@@ -377,6 +388,39 @@ html[data-theme="light"] {
   --slat-card-background: var(--surface-elevated-100);
   --slat-card-background-hover: var(--surface-elevated-200);
   --slat-accessory-background: var(--black-opacity-10);
+
+  /* Chip */
+  --chip-background: var(--white);
+  --chip-background-hover: var(--white);
+  --chip-background-focus: var(--white);
+  --chip-background-active: var(--white);
+  --chip-border-color: var(--grey-300);
+  --chip-border-color-hover: var(--grey-300);
+  --chip-border-color-focus: var(--grey-300);
+  --chip-border-color-active: var(--grey-1000);
+  --chip-text-color-active: var(--grey-1000);
+  --chip-icon-fill: var(--black);
+  --chip-dismiss-action-background: var(--black-opacity-10);
+  --chip-dismiss-action-background-hover: var(--black-opacity-0);
+
+  /* Dropdown */
+  --dropdown-background: var(--grey-100);
+  --dropdown-border-color: var(--black-opacity-20);
+  --dropdown-shadow-color: var(--black-opacity-10);
+  --dropdown-button-background-hover: var(--white);
+
+  /* Progress */
+  --progress-bar-background: var(--blue-600);
+  --progress-track-background: var(--grey-200);
+  --progress-loading-bar-100: var(--grey-200);
+  --progress-loading-bar-200: var(--grey-300);
+
+  /* Stepper */
+  --stepper-color: var(--blue-600);
+  --stepper-background-active: var(--stepper-color);
+  --stepper-background-inactive: var(--white);
+  --stepper-border-color: var(--stepper-color);
+  --stepper-text-color-active: var(--stepper-color);
 }
 
 /* ==================================================================================================== */
@@ -450,7 +494,7 @@ html[data-theme="dark"] {
   --action-secondary-border-color: var(--grey-200);
   --action-secondary-border-color-hover: var(--grey-200);
   --action-secondary-border-color-focus: var(--grey-200);
-  --action-secondary-border-color-disabled: var(--grey-200);
+  --action-secondary-border-color-disabled: var(--grey-600);
   --action-secondary-background: var(--black-opacity-0);
   --action-secondary-background-hover: var(--grey-800);
   --action-secondary-background-focus: var(--grey-800);
@@ -504,6 +548,8 @@ html[data-theme="dark"] {
   --text-color-warning: var(--orange-400);
   --text-color-error: var(--red-400);
   --text-color-optional: var(--grey-300);
+
+  --backdrop-overlay: var(--black-opacity-70);
   /* ================================================================================================== */
   /* Components                                                                                         */
   /* ================================================================================================== */
@@ -531,6 +577,13 @@ html[data-theme="dark"] {
   /* Input */
   --input-background: var(--grey-900);
   --input-background-disabled: var(--grey-800);
+  /* Checkbox */
+  --checkbox-background: var(--grey-900);
+  --checkbox-background-checked: var(--grey-200);
+  --checkbox-icon-color-checked: var(--grey-900);
+  --checkbox-background-disabled: var(--grey-800);
+  --checkbox-background-checked-disabled: var(--grey-500);
+  --checkbox-icon-color-checked-disabled: var(--grey-900);
   /* Addon */
   --addon-background: var(--grey-1000);
   /* Tabs */
@@ -554,6 +607,39 @@ html[data-theme="dark"] {
   --slat-card-background: var(--surface-elevated-100);
   --slat-card-background-hover: var(--surface-elevated-200);
   --slat-accessory-background: var(--white-opacity-10);
+
+  /* Chip */
+  --chip-background: var(--black);
+  --chip-background-hover: var(--black);
+  --chip-background-focus: var(--black);
+  --chip-background-active: var(--black);
+  --chip-border-color: var(--grey-700);
+  --chip-border-color-hover: var(--grey-700);
+  --chip-border-color-focus: var(--grey-700);
+  --chip-border-color-active: var(--grey-100);
+  --chip-text-color-active: var(--grey-100);
+  --chip-icon-fill: var(--white);
+  --chip-dismiss-action-background: var(--white-opacity-20);
+  --chip-dismiss-action-background-hover: var(--white-opacity-0);
+
+  /* Dropdown */
+  --dropdown-background: var(--grey-1000);
+  --dropdown-border-color: var(--black-opacity-20);
+  --dropdown-shadow-color: var(--black-opacity-20);
+  --dropdown-button-background-hover: var(--grey-900);
+
+  /* Progress */
+  --progress-bar-background: var(--blue-500);
+  --progress-track-background: var(--grey-700);
+  --progress-loading-bar-100: var(--grey-900);
+  --progress-loading-bar-200: var(--grey-1000);
+
+  /* Stepper */
+  --stepper-color: var(--blue-500);
+  --stepper-background-active: var(--stepper-color);
+  --stepper-background-inactive: var(--black);
+  --stepper-border-color: var(--stepper-color);
+  --stepper-text-color-active: var(--stepper-color);
 }
 
 /* ==================================================================================================== */
@@ -669,4 +755,12 @@ html[data-theme="dark"] {
   --carousel-tab-offset: calc(4.4rem + var(--carousel-tab-position)); /* Tab Height */
   /* Slat [Action] */
   --slat-radius: var(--radius-200);
+  /* Checkbox */
+  --checkbox-radius: var(--radius-100);
+  /* Chip */
+  --chip-radius: var(--radius-400);
+  /* Dropdown */
+  --dropdown-radius: var(--radius-100);
+  /* Dialog */
+  --dialog-radius: var(--radius-150);
 }
