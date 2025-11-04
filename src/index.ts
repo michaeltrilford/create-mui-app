@@ -2,7 +2,12 @@
 import "@muibook/components/css/mui-base.css";
 import "@muibook/components/css/mui-reset.css";
 
-// Author CSS (LOCAL)
+// Local CSS
+/* 
+  `mui-tokens.css` provides default design tokens for easy theming. 
+  You can override it locally to adjust typography, spacing, or other styles. 
+  Avoid duplicating overrides — use either the package tokens or your local file to keep things simple.
+*/
 import "./mui-styles/mui-tokens.css";
 import "./author/index.css";
 
