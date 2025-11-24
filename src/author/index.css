@@ -19,6 +19,18 @@ body {
   background-color: var(--app-container-surface);
 }
 
+#app {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: stretch;
+}
+
 .introduction {
   max-width: 36ch;
+}
+
+mui-container {
+  margin: 0 auto;
 }

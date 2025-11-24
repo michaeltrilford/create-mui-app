@@ -1,22 +1,21 @@
-// Mui CSS (PACKAGE)
+// Mui Styles
 import "@muibook/components/css/mui-base.css";
 import "@muibook/components/css/mui-reset.css";
 
 // Local CSS
-/* 
-  `mui-tokens.css` provides default design tokens for easy theming. 
-  You can override it locally to adjust typography, spacing, or other styles. 
-  Avoid duplicating overrides — use either the package tokens or your local file to keep things simple.
-*/
+/* mui-tokens.css: default theme tokens, customise brand tokens locally */
 import "./mui-styles/mui-tokens.css";
 import "./author/index.css";
 
-// Mui Components (PACKAGE)
+// Mui Components
 import "@muibook/components/mui-container";
 import "@muibook/components/mui-body";
 import "@muibook/components/mui-link";
 import "@muibook/components/mui-stack/hstack";
 import "@muibook/components/mui-stack/vstack";
+
+// MUI Behaviour
+import { initDrawer, initDialog } from "./mui-behaviour";
 
 // Assets
 import "./logo.js";
@@ -55,3 +54,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /*html*/ `
     </mui-v-stack>
   </mui-container>
 `;
+
+// Mui Logic
+const root = document.querySelector<HTMLElement>("#app")!;
+requestAnimationFrame(() => {
+  initDrawer(root);
+  initDialog(root);
+});
