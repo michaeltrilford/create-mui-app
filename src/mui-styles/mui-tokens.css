@@ -122,6 +122,7 @@
   --grey-900: #333;
   --grey-1000: #222;
   --grey-1100: #111;
+  --grey-1200: #050505;
   /* Red scale */
   --red-100: #ffe5e5;
   --red-200: #fbbcbc;
@@ -173,6 +174,8 @@
   --radius-200: 8px;
   --radius-300: 16px;
   --radius-400: 24px;
+  --radius-500: 36px;
+  --radius-600: 48px;
   /* Spacing */
   --space-000: 0;
   --space-025: 0.2rem;
@@ -198,21 +201,48 @@
   --speed-200: 0.2s;
   --speed-300: 0.3s;
   --speed-400: 0.4s;
+
+  /* Avatar Colors */
+  --avatar-purple-200: hsl(270, 55%, 70%);
+  --avatar-purple-800: hsl(270, 55%, 35%);
+  --avatar-violet-200: hsl(255, 50%, 70%);
+  --avatar-violet-800: hsl(255, 50%, 35%);
+  --avatar-pink-200: hsl(330, 65%, 73%);
+  --avatar-pink-800: hsl(330, 65%, 40%);
+  --avatar-magenta-200: hsl(295, 60%, 70%);
+  --avatar-magenta-800: hsl(295, 60%, 35%);
+  --avatar-red-200: hsl(0, 65%, 68%);
+  --avatar-red-800: hsl(0, 65%, 35%);
+  --avatar-orange-200: hsl(25, 80%, 70%);
+  --avatar-orange-800: hsl(25, 80%, 35%);
+  --avatar-amber-200: hsl(45, 85%, 72%);
+  --avatar-amber-800: hsl(45, 85%, 38%);
+  --avatar-yellow-200: hsl(55, 80%, 75%);
+  --avatar-yellow-800: hsl(55, 80%, 40%);
+  --avatar-lime-200: hsl(90, 55%, 70%);
+  --avatar-lime-800: hsl(90, 55%, 35%);
+  --avatar-green-200: hsl(140, 50%, 70%);
+  --avatar-green-800: hsl(140, 50%, 35%);
+  --avatar-teal-200: hsl(170, 55%, 70%);
+  --avatar-teal-800: hsl(170, 55%, 35%);
+  --avatar-cyan-200: hsl(190, 60%, 70%);
+  --avatar-cyan-800: hsl(190, 60%, 35%);
+  --avatar-blue-200: hsl(210, 70%, 70%);
+  --avatar-blue-800: hsl(210, 70%, 35%);
+  --avatar-indigo-200: hsl(230, 55%, 70%);
+  --avatar-indigo-800: hsl(230, 55%, 35%);
 }
 
 /* ==================================================================================================== */
 /* 2. LIGHT MODE                                                                                        */
 /* ==================================================================================================== */
 html[data-theme="light"] {
-  /* ================================================================================================== */
-  /* Semantic                                                                                           */
-  /* ================================================================================================== */
   /* Form */
-  --form-default-text-color: var(--grey-500);
+  --form-default-text-color: var(--grey-900);
   --form-success-text-color: var(--green-700);
   --form-warning-text-color: var(--orange-700);
   --form-error-text-color: var(--red-700);
-  --form-default-text-color-hover: var(--grey-600);
+  --form-default-text-color-hover: var(--grey-800);
   --form-success-text-color-hover: var(--green-800);
   --form-warning-text-color-hover: var(--orange-800);
   --form-error-text-color-hover: var(--red-800);
@@ -224,6 +254,10 @@ html[data-theme="light"] {
   --form-success-border-color-hover: var(--green-700);
   --form-warning-border-color-hover: var(--orange-700);
   --form-error-border-color-hover: var(--red-700);
+  --form-default-placeholder-color: var(--grey-500);
+  --form-default-placeholder-color-hover: var(--grey-700);
+  --form-default-placeholder-color-focus: var(--grey-700);
+  --form-default-placeholder-color-disabled: var(--grey-500);
   /* Feedback - Border (Alerts & Messages) */
   --feedback-neutral-border-color: var(--black-opacity-20);
   --feedback-positive-border-color: var(--green-600);
@@ -254,7 +288,6 @@ html[data-theme="light"] {
   --feedback-info-action-background: var(--blue-200);
   --feedback-warning-action-background: var(--orange-200);
   --feedback-attention-action-background: var(--red-200);
-
   /* Action - Primary (Button & Link) */
   --action-primary-border-color: var(--black-opacity-0);
   --action-primary-border-color-hover: var(--black-opacity-0);
@@ -307,9 +340,10 @@ html[data-theme="light"] {
   --action-attention-text-color-hover: var(--white);
   --action-attention-text-color-focus: var(--white);
   --action-attention-text-color-disabled: var(--red-300);
-  /* ================================================================================================== */
-  /* Contextual                                                                                         */
-  /* ================================================================================================== */
+  /* Action - Avatar (Button & Link) */
+  --action-avatar-background: var(--grey-200);
+  --action-avatar-background-hover: var(--grey-300);
+  /* Surface */
   --surface: var(--grey-200);
   --surface-elevated-alpha: var(--white-opacity-50);
   --surface-elevated-100: var(--white);
@@ -317,16 +351,16 @@ html[data-theme="light"] {
   --surface-recessed-alpha: var(--black-opacity-10);
   --surface-recessed-100: var(--grey-300);
   --surface-recessed-200: var(--grey-400);
-
+  /* Stroke */
   --outline-color: var(--blue-500);
   --border-color: var(--black-opacity-20);
-
+  /* Text */
   --text-color: var(--grey-900);
   --text-color-success: var(--green-600);
   --text-color-warning: var(--orange-600);
   --text-color-error: var(--red-600);
   --text-color-optional: var(--grey-600);
-
+  /* Overlay */
   --backdrop-overlay: var(--black-opacity-70);
   /* ================================================================================================== */
   /* Components                                                                                         */
@@ -387,7 +421,31 @@ html[data-theme="light"] {
   --slat-background-hover: var(--white-opacity-90);
   --slat-card-background: var(--surface-elevated-100);
   --slat-card-background-hover: var(--surface-elevated-200);
-  --slat-accessory-background: var(--black-opacity-10);
+  --slat-avatar-background: var(--black-opacity-10);
+  --slat-avatar-background-hover: var(--black-opacity-20);
+  --slat-card-avatar-background: var(--black-opacity-10);
+  --slat-card-avatar-background-hover: var(--black-opacity-20);
+
+  /* Avatar */
+  --avatar-background-neutral: var(--grey-200);
+  --avatar-background-positive: var(--green-200);
+  --avatar-background-warning: var(--orange-200);
+  --avatar-background-attention: var(--red-200);
+
+  --avatar-background-purple: var(--avatar-purple-200);
+  --avatar-background-violet: var(--avatar-violet-200);
+  --avatar-background-pink: var(--avatar-pink-200);
+  --avatar-background-magenta: var(--avatar-magenta-200);
+  --avatar-background-red: var(--avatar-red-200);
+  --avatar-background-orange: var(--avatar-orange-200);
+  --avatar-background-amber: var(--avatar-amber-200);
+  --avatar-background-yellow: var(--avatar-yellow-200);
+  --avatar-background-lime: var(--avatar-lime-200);
+  --avatar-background-green: var(--avatar-green-200);
+  --avatar-background-teal: var(--avatar-teal-200);
+  --avatar-background-cyan: var(--avatar-cyan-200);
+  --avatar-background-blue: var(--avatar-blue-200);
+  --avatar-background-indigo: var(--avatar-indigo-200);
 
   /* Chip */
   --chip-background: var(--white);
@@ -400,7 +458,7 @@ html[data-theme="light"] {
   --chip-border-color-active: var(--grey-1000);
   --chip-text-color-active: var(--grey-1000);
   --chip-icon-fill: var(--black);
-  --chip-dismiss-action-background: var(--black-opacity-10);
+  --chip-dismiss-action-background: var(--grey-100);
   --chip-dismiss-action-background-hover: var(--black-opacity-0);
 
   /* Dropdown */
@@ -433,15 +491,12 @@ html[data-theme="light"] {
 /* 3. DARK MODE                                                                                         */
 /* ==================================================================================================== */
 html[data-theme="dark"] {
-  /* ================================================================================================== */
-  /* Semantic                                                                                           */
-  /* ================================================================================================== */
   /* Form */
-  --form-default-text-color: var(--grey-500);
+  --form-default-text-color: var(--grey-200);
   --form-success-text-color: var(--green-400);
   --form-warning-text-color: var(--orange-400);
   --form-error-text-color: var(--red-400);
-  --form-default-text-color-hover: var(--grey-400);
+  --form-default-text-color-hover: var(--grey-100);
   --form-success-text-color-hover: var(--green-300);
   --form-warning-text-color-hover: var(--orange-300);
   --form-error-text-color-hover: var(--red-300);
@@ -453,6 +508,10 @@ html[data-theme="dark"] {
   --form-success-border-color-hover: var(--green-300);
   --form-warning-border-color-hover: var(--orange-300);
   --form-error-border-color-hover: var(--red-300);
+  --form-default-placeholder-color: var(--grey-500);
+  --form-default-placeholder-color-hover: var(--grey-400);
+  --form-default-placeholder-color-focus: var(--grey-400);
+  --form-default-placeholder-color-disabled: var(--grey-500);
   /* Feedback - Border (Alerts & Messages) */
   --feedback-neutral-border-color: var(--white-opacity-20);
   --feedback-positive-border-color: var(--green-400);
@@ -535,26 +594,30 @@ html[data-theme="dark"] {
   --action-attention-text-color-hover: var(--white);
   --action-attention-text-color-focus: var(--white);
   --action-attention-text-color-disabled: var(--red-300);
-  /* ================================================================================================== */
-  /* Contextual                                                                                         */
-  /* ================================================================================================== */
+  /* Action - Avatar (Button & Link) */
+  --action-avatar-background: var(--grey-1000);
+  --action-avatar-background-hover: var(--grey-1100);
+
+  /* Surface */
   --surface: var(--grey-1000);
   --surface-elevated-alpha: var(--white-opacity-10);
   --surface-elevated-100: var(--grey-800);
   --surface-elevated-200: var(--grey-900);
+  --surface-elevated-300: var(--grey-1000);
   --surface-recessed-alpha: var(--black-opacity-30);
   --surface-recessed-100: var(--grey-1000);
   --surface-recessed-200: var(--grey-1100);
-
+  --surface-recessed-300: var(--grey-1200);
+  /* Stroke */
   --outline-color: var(--blue-300);
   --border-color: var(--white-opacity-20);
-
+  /* Text */
   --text-color: var(--grey-200);
   --text-color-success: var(--green-400);
   --text-color-warning: var(--orange-400);
   --text-color-error: var(--red-400);
   --text-color-optional: var(--grey-300);
-
+  /* Overlay */
   --backdrop-overlay: var(--black-opacity-70);
   /* ================================================================================================== */
   /* Components                                                                                         */
@@ -612,20 +675,44 @@ html[data-theme="dark"] {
   --slat-background-hover: var(--black-opacity-50);
   --slat-card-background: var(--surface-elevated-100);
   --slat-card-background-hover: var(--surface-elevated-200);
-  --slat-accessory-background: var(--white-opacity-10);
+  --slat-avatar-background: var(--black-opacity-20);
+  --slat-avatar-background-hover: var(--black-opacity-40);
+  --slat-card-avatar-background: var(--black-opacity-30);
+  --slat-card-avatar-background-hover: var(--black-opacity-40);
+
+  /* Avatar */
+  --avatar-background-neutral: var(--grey-900);
+  --avatar-background-positive: var(--green-900);
+  --avatar-background-warning: var(--orange-900);
+  --avatar-background-attention: var(--red-900);
+
+  --avatar-background-purple: var(--avatar-purple-800);
+  --avatar-background-violet: var(--avatar-violet-800);
+  --avatar-background-pink: var(--avatar-pink-800);
+  --avatar-background-magenta: var(--avatar-magenta-800);
+  --avatar-background-red: var(--avatar-red-800);
+  --avatar-background-orange: var(--avatar-orange-800);
+  --avatar-background-amber: var(--avatar-amber-800);
+  --avatar-background-yellow: var(--avatar-yellow-800);
+  --avatar-background-lime: var(--avatar-lime-800);
+  --avatar-background-green: var(--avatar-green-800);
+  --avatar-background-teal: var(--avatar-teal-800);
+  --avatar-background-cyan: var(--avatar-cyan-800);
+  --avatar-background-blue: var(--avatar-blue-800);
+  --avatar-background-indigo: var(--avatar-indigo-800);
 
   /* Chip */
-  --chip-background: var(--black);
-  --chip-background-hover: var(--black);
-  --chip-background-focus: var(--black);
-  --chip-background-active: var(--black);
-  --chip-border-color: var(--grey-700);
+  --chip-background: var(--grey-800);
+  --chip-background-hover: var(--grey-800);
+  --chip-background-focus: var(--grey-800);
+  --chip-background-active: var(--grey-800);
+  --chip-border-color: var(--grey-600);
   --chip-border-color-hover: var(--grey-700);
   --chip-border-color-focus: var(--grey-700);
   --chip-border-color-active: var(--grey-100);
   --chip-text-color-active: var(--grey-100);
   --chip-icon-fill: var(--white);
-  --chip-dismiss-action-background: var(--white-opacity-20);
+  --chip-dismiss-action-background: var(--grey-700);
   --chip-dismiss-action-background-hover: var(--white-opacity-0);
 
   /* Dropdown */
@@ -658,9 +745,6 @@ html[data-theme="dark"] {
 /* 4. SET THE FOUNDATION                                                                                */
 /* ==================================================================================================== */
 :where(html) {
-  /* ================================================================================================== */
-  /* Semantic                                                                                           */
-  /* ================================================================================================== */
   /* Feedback - Border (Alerts & Messages) */
   --feedback-neutral-border: var(--stroke-size-200) var(--stroke-solid) var(--feedback-neutral-border-color);
   --feedback-positive-border: var(--stroke-size-200) var(--stroke-solid) var(--feedback-positive-border-color);
@@ -688,17 +772,39 @@ html[data-theme="dark"] {
   --action-attention-border-focus: var(--stroke-size-200) var(--stroke-solid) var(--action-attention-border-color-focus);
   --action-attention-border-disabled: var(--stroke-size-200) var(--stroke-solid)
     var(--action-attention-border-color-disabled);
+  --action-font-size: var(--text-font-size);
+  --action-line-height: var(--text-line-height);
+  --action-font-weight: var(--font-weight-medium);
+
+  /* SIZE: XSMALL */
+  --action-radius-x-small: var(--radius-100);
+  --action-padding-x-small: var(--space-050) var(--space-200);
+  --action-before-slot-padding-x-small: var(--space-100);
+  --action-after-slot-padding-x-small: var(--space-100);
+  --action-icon-only-size-x-small: 2.8rem;
+
+  /* SIZE: SMALL */
+  --action-radius-small: var(--radius-100);
+  --action-padding-small: calc(var(--space-100) - (var(--stroke-size-100) / 2)) var(--space-300);
+  --action-before-slot-padding-small: var(--space-200);
+  --action-after-slot-padding-small: var(--space-200);
+  --action-icon-only-size-small: 3.6rem;
+
+  /* SIZE: MEDIUM: DEFAULT */
+  --action-radius-medium: var(--radius-200);
   --action-padding: var(--space-200) calc(var(--space-300) + var(--space-100));
   --action-before-slot-padding: var(--space-300);
   --action-after-slot-padding: var(--space-300);
   --action-icon-only-padding: var(--space-000);
-  --action-radius: var(--radius-100);
-  --action-font-size: var(--text-font-size);
-  --action-line-height: var(--text-line-height);
-  --action-font-weight: var(--font-weight-medium);
-  /* ================================================================================================== */
-  /* Contextual                                                                                         */
-  /* ================================================================================================== */
+  --action-icon-only-size: 4.4rem;
+
+  /* SIZE: LARGE */
+  --action-radius-large: var(--radius-300);
+  --action-padding-large: var(--space-300) var(--space-500);
+  --action-before-slot-padding-large: var(--space-400);
+  --action-after-slot-padding-large: var(--space-400);
+  --action-icon-only-size-large: 5.2rem;
+
   /* Text */
   --text-line-height-xs: var(--line-height-25);
   --text-line-height-s: var(--line-height-50);
@@ -769,10 +875,17 @@ html[data-theme="dark"] {
   --slat-radius: var(--radius-200);
   /* Checkbox */
   --checkbox-radius: var(--radius-100);
+  --checkbox-size: calc(var(--space-400) + (var(--stroke-size-100) * 3));
+
   /* Chip */
   --chip-radius: var(--radius-400);
   /* Dropdown */
   --dropdown-radius: var(--radius-100);
   /* Dialog */
   --dialog-radius: var(--radius-150);
+  /* Avatar */
+  --avatar-x-small: var(--space-500); /* 24px */
+  --avatar-small: calc(var(--space-600) + var(--space-025)); /* 38px */
+  --avatar-medium: var(--space-700); /* 48px */
+  --avatar-large: calc(var(--space-700) + var(--space-200)); /* 56px */
 }
