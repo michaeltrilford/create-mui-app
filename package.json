@@ -14,6 +14,6 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@muibook/components": "^8.0.2"
+    "@muibook/components": "^9.0.0"
   }
 }

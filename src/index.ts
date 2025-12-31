@@ -3,11 +3,14 @@ import "@muibook/components/css/mui-base.css";
 import "@muibook/components/css/mui-reset.css";
 
 // Local CSS
-/* mui-tokens.css: default theme tokens, customise brand tokens locally */
+// Learn more: mui-styles/readme.md
+import "./mui-styles/mui-brand.css";
 import "./mui-styles/mui-tokens.css";
 import "./author/index.css";
 
 // Mui Components
+// import "@muibook/components";
+// Or import individual components for smaller bundle size
 import "@muibook/components/mui-container";
 import "@muibook/components/mui-body";
 import "@muibook/components/mui-link";
